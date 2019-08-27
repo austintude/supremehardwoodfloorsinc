@@ -693,6 +693,17 @@ were hidden (via .neverending) before. */
 
 	/* Template Page mods begin */
 	.page-template {
+
+		& .site {
+			justify-content: flex-start;
+			grid-gap: 0;
+		}
+
+		& main {
+			background: #fff url(../images/tile.jpg);
+			width: 100vw;
+		}
+
 		& .site-title {
 			margin-top: 22vh;
 		}
@@ -717,6 +728,7 @@ were hidden (via .neverending) before. */
 
 		& #block1.oddBlock {
 			grid-template-areas: "block-1st block-2nd";
+			margin-top: 2rem;
 
 			& #topImg {
 				grid-area: block-2nd;
@@ -725,7 +737,7 @@ were hidden (via .neverending) before. */
 			& #contentBlock {
 				grid-area: block-1st;
 			}
-			& div:nth-child(1) {
+			& #contentBlock {
 				background: #212559;
 				left: 3vw;
 				height: 58vh;
@@ -735,7 +747,7 @@ were hidden (via .neverending) before. */
 				position: relative;
 			}
 
-			& div:nth-child(2) {
+			& #topImg {
 				margin-left: 12vw;
 				background: transparent;
 				height: 40vw;
@@ -745,6 +757,7 @@ were hidden (via .neverending) before. */
 
 		& #block1.evenBlock {
 			grid-template-areas: "block-2nd block-1st";
+			margin-top: 2rem;
 
 			& #topImg {
 				grid-area: block-2nd;
@@ -753,7 +766,7 @@ were hidden (via .neverending) before. */
 			& #contentBlock {
 				grid-area: block-1st;
 			}
-			& div:nth-child(1) {
+			& #contentBlock {
 				background: #212559;
 				left: 29vw;
 				height: 58vh;
@@ -763,7 +776,7 @@ were hidden (via .neverending) before. */
 				position: relative;
 			}
 
-			& div:nth-child(2) {
+			& #topImg {
 				margin-left: 12vw;
 				background: transparent;
 				height: 40vw;
@@ -1120,13 +1133,18 @@ were hidden (via .neverending) before. */
 			top: -10rem;
 		}
 
-		& #block1.oddBlock {
+		& #block1.oddBlock,
+		& #block1.evenBlock {
 			grid-template-columns: 1fr;
 			grid-template-areas: "block-1st" "block-2nd";
-			margin: 2rem 0 8rem;
+			margin: 8rem 0 0;
 
 			& #topImg {
-				grid-area: "block-1st";
+				grid-area: block-1st;
+				margin: 0;
+				left: 0;
+				width: 100vw;
+				height: auto;
 
 				& amp-img {
 					height: 20rem;
@@ -1134,15 +1152,26 @@ were hidden (via .neverending) before. */
 			}
 
 			& #contentBlock {
-				grid-area: "block-2nd";
-			}
-			
-			& div:first-child {
-				left: 0;
+				grid-area: block-2nd;
 				width: 100vw;
+				margin-left: auto;
+				margin-right: auto;
+				margin-top: 5rem;
+				height: auto;
+				min-height: 15rem;
+				left: 0;
+				top: -5rem;
 			}
 		}
 
+		& .preBlock {
+			width: 70vw;
+			margin: auto auto -4rem;
+		}
+
+		& .site-footer {
+			margin-top: -5rem;
+		}
 	}
 }
 
@@ -1415,6 +1444,7 @@ were hidden (via .neverending) before. */
 		max-width: 100vw;
 	}
 }
+
 
 @media (--ipad-portrait-menu-query) {
 
@@ -2061,11 +2091,13 @@ were hidden (via .neverending) before. */
 
 		& .preBlock {
 			width: 85vw;
-			margin-bottom: 7rem;
+			margin-bottom: 2rem;
 		}
 
-		& #block1 {
+		& #block1.evenBlock,
+		& #block1.oddBlock {
 			grid-template-areas: "block-1st" "block-2nd";
+			margin: 2rem 0;
 
 			& #topImg {
 				grid-area: block-1st;
@@ -2073,9 +2105,24 @@ were hidden (via .neverending) before. */
 
 			& #contentBlock {
 				grid-area: block-2nd;
+				margin-left: auto;
+				width: 85vw;
+				margin-right: auto;
+				min-height: 18rem;
+				margin-top: 1rem;
+				top: 0;
+			}
+
+			& p {
+				width: 85vw;
+				margin: 0.3rem 0.3rem 0.8rem;
 			}
 		}
+		& .site-footer {
+			margin-top: 1rem;
+		}
 }
+
 
 }
 
@@ -2664,7 +2711,7 @@ were hidden (via .neverending) before. */
 			& #contentBlock {
 				grid-area: block-1st;
 			}
-			& div:first-child {
+			& #topImg {
 				/* background: #212559;
 				left: 29vw;
 				height: 58vh;
@@ -2682,7 +2729,7 @@ were hidden (via .neverending) before. */
     position: relative;
 			}
 
-			& div:nth-child(2) {
+			& #contentBlock {
 				/* margin-left: 12vw;
 				background: transparent;
 				height: 40vw;
@@ -2713,7 +2760,7 @@ were hidden (via .neverending) before. */
 			& #contentBlock {
 				grid-area: block-1st;
 			}
-			& div:nth-child(2) {
+			& #topImg {
 				/* background: #212559;
 				left: 29vw;
 				height: 58vh;
@@ -2731,7 +2778,7 @@ were hidden (via .neverending) before. */
     position: relative;
 			}
 
-			& div:first-child {
+			& #contentBlock {
 				/* margin-left: 12vw;
 				background: transparent;
 				height: 40vw;
@@ -2747,6 +2794,17 @@ were hidden (via .neverending) before. */
     position: relative;
     margin: 2.5rem auto auto auto;
 				
+			}
+		}
+
+		& #block1 {
+			
+			& amp-img {
+				min-height: 32rem;
+			}
+
+			& #contentBlock {
+				min-height: 20rem;
 			}
 		}
 	}

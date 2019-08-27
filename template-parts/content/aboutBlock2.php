@@ -50,7 +50,7 @@ namespace WP_Rig\WP_Rig;
   <amp-img 
   src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/floor-sample-min.jpg"
   width="1536"
-			height="768 "
+			height="768"
 			layout="responsive"
       alt="floor-sample-min"
       media="(max-width: 63.99em)"
