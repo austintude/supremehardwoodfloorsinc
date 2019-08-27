@@ -8,7 +8,7 @@
 namespace WP_Rig\WP_Rig;
 
 ?>
-<div class="preBlock">
+<div class="preBlock" id="core-values">
   <h2>
     Core Values
   </h2>
