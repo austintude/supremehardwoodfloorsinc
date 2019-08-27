@@ -1,0 +1,16 @@
+{
+    "theme": {
+        "slug": "supremehardwoodfloorsinc",
+        "name": "Supreme Hardwood Floors Inc",
+        "author": "Daniel Bisett",
+        "PHPNamespace": "WP_Rig\\WP_Rig"
+      },
+      "dev": {
+        "browserSync": {
+          "live": true,
+          "proxyURL": "supremehardwoodfloorsinc:8888",
+          "bypassPort": "8184",
+          "https": false
+        }
+}
+}
