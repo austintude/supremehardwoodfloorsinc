@@ -21,20 +21,20 @@ namespace WP_Rig\WP_Rig;
 <div id="block1" class="oddBlock">
   <div id="topImg">
   <amp-img 
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/floor-sample-min.jpg"
+  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/about-us-wood-working-story.jpg"
   width="1536"
 			height="768"
 			layout="responsive"
-      alt="floor-sample-min"
+      alt="about-us-wood-working-story"
       media="(max-width: 63.99em)"
       >
     </amp-img>
     <amp-img 
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/floor-sample-square.jpg"
+  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/about-us-wood-working-story-square.jpg"
   width="6"
 			height="6"
 			layout="responsive"
-      alt="floor-sample-square"
+      alt="about-us-wood-working-story-square"
       media="(min-width: 64em)"
       >
 		</amp-img>

@@ -48,20 +48,20 @@ namespace WP_Rig\WP_Rig;
 </div>
 <div id="topImg">
   <amp-img 
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/floor-sample-min.jpg"
+  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/about-us-darts-mission.jpg"
   width="1536"
 			height="768"
 			layout="responsive"
-      alt="floor-sample-min"
+      alt="about-us-darts-mission"
       media="(max-width: 63.99em)"
       >
     </amp-img>
     <amp-img 
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/floor-sample-square.jpg"
+  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/about-us-darts-mission-square.jpg"
   width="6"
 			height="6"
 			layout="responsive"
-      alt="floor-sample-square"
+      alt="about-us-darts-mission-square"
       media="(min-width: 64em)"
       >
 		</amp-img>
