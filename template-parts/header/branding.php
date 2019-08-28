@@ -6,6 +6,7 @@
  */
 
 namespace WP_Rig\WP_Rig;
+$hero_images	= get_field('hero_images');
 
 ?>
 
@@ -21,93 +22,42 @@ namespace WP_Rig\WP_Rig;
 		type="slides"
 		autoplay
 		delay="5500">
+		<?php while (have_rows('hero_images')) : the_row();
+
+// vars
+$hero_image_mobile = get_sub_field('hero_image_mobile');
+$hero_image_mobile_landscape = get_sub_field('hero_image_mobile_landscape');
+$hero_image_ipad_landscape_plus = get_sub_field('hero_image_ipad_landscape_plus');
+?>
 	<div>
+	
 		<amp-img 
 		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/indoors-circle-window-min.jpg"
+  src="<?php echo $hero_image_mobile_landscape['url']; ?>"
   width="640"
 			height="480"
 			layout="responsive"
-			alt="indoors circle window min">
+			alt="<?php echo $hero_image_mobile_landscape['alt']; ?>">
 		</amp-img>
 		<amp-img 
 		media="(max-width: 48.5em) and (min-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/indoors-story-min.jpg"
+  src="<?php echo $hero_image_mobile['url']; ?>"
   width="640"
 			height="480"
 			layout="responsive"
-			alt="indoors circle window story">
+			alt="<?php echo $hero_image_mobile['alt']; ?>">
 		</amp-img>
 		<amp-img 
 		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/indoors-circle-window.jpg"
+  src="<?php echo $hero_image_ipad_landscape_plus['url']; ?>"
   width="640"
 			height="480"
 			layout="responsive"
-			alt="indoors circle window">
+			alt="<?php echo $hero_image_ipad_landscape_plus['alt']; ?>">
 		</amp-img>
-		<!-- <figcaption class="paragraph">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</figcaption> -->
+		
 	</div>
-    <div>
-	<amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/governors-mansion-min.jpg"
-  width="481"
-			height="639"
-			layout="responsive"
-			alt="governors-mansion-min">
-		</amp-img>
-		<amp-img 
-		media="(max-width: 48.5em) and (min-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/governors-mansion-story-min.jpg"
-  width="640"
-			height="480"
-			layout="responsive"
-			alt="governors-mansion-story-min">
-		</amp-img>
-		<amp-img 
-		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/governors-mansion.jpg"
-  width="640"
-			height="480"
-			layout="responsive"
-			alt="governors-mansion">
-		</amp-img>	
-		<!-- <figcaption class="paragraph">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</figcaption> -->
-	</div>
-	<div>
-	<amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/kitchen-bright-min.jpg"
-  width="640"
-			height="480"
-			layout="responsive"
-			alt="kitchen-bright-min">
-		</amp-img>
-		<amp-img 
-		media="(max-width: 48.5em) and (min-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/kitchen-bright-story-min.jpg"
-  width="640"
-			height="480"
-			layout="responsive"
-			alt="kitchen-bright-story-min">
-		</amp-img>
-		<amp-img 
-		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/kitchen-bright.jpg"
-  width="640"
-			height="480"
-			layout="responsive"
-			alt="kitchen-bright">
-		</amp-img>	
-		<!-- <figcaption class="paragraph">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</figcaption> -->
-	</div>
+	<?php endwhile; ?>
 	</amp-carousel>
 </div> <!-- end #carouselHero -->
 	
