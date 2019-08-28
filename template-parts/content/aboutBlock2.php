@@ -1,20 +1,29 @@
 <?php
 /**
- * Template part for front-page block1
+ * Template part for front-page block2
  *
  * @package wp_rig
  */
 
 namespace WP_Rig\WP_Rig;
+$about_us_block2_title				= get_field('about_us_block2_title');
+$about_us_block2_pre_image_content				= get_field('about_us_block2_pre_image_content');
+$about_us_block2_image	= get_field('about_us_block2_image');
+$about_us_block2_image_mobile	= get_field('about_us_block2_image_mobile');
+$about_us_block2_sub_title	= get_field('about_us_block2_sub_title');
+$about_us_block2_content			= get_field('about_us_block2_content');
+$about_us_block2_cta			= get_field('about_us_block2_cta');
+$about_us_block2_form_url			= get_field('about_us_block2_form_url');
+$about_us_cta_loading_image			= get_field('about_us_cta_loading_image');
 
 ?>
 <div class="preBlock" id="team">
   <h2>
-    Team
+  <?php echo $about_us_block2_title; ?>
   </h2>
   <div class="contentBlock">
     <p>
-    You can do anything. That's what makes life fun. That you can make these decisions. That you can create the world that you want. The more we do this - the more it will do good things to our heart.
+    <?php echo $about_us_block2_pre_image_content; ?>
     </p>
 </div>
 </div>
@@ -22,24 +31,24 @@ namespace WP_Rig\WP_Rig;
   
 <div id="contentBlock">
 	<h3>
-		The Fine Art of Luxury
+  <?php echo $about_us_block2_sub_title; ?>
 	</h3>
 	<p>
-	This is a fantastic little painting. When things happen - enjoy them. They're little gifts. Get tough with it, get strong. 
+	<?php echo $about_us_block2_content; ?>
 	</p>
 	<amp-lightbox id="my-lightbox" layout="nodisplay">
     <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0">
       
       <amp-iframe width="350" height="300" layout="fixed" 
               sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" 
-              src="https://page.co/qQY60">
+              src="<?php echo $about_us_block2_form_url; ?>">
     <amp-img layout="fill"
-             src="../wp-content/themes/supremehardwoodfloorsinc/assets/images/supreme-hardwood-floors-form-loading.png"
+             src="<?php echo $about_us_cta_loading_image['url']; ?>"
              placeholder></amp-img>
   </amp-iframe>
     </div>
   </amp-lightbox>
-  <button id="estimate" class="btn btn-lg btn-danger" on="tap:my-lightbox" role="button" tabindex="0">Get your free estimate now! »</button>
+  <button id="estimate" class="btn btn-lg btn-danger" on="tap:my-lightbox" role="button" tabindex="0"><?php echo $about_us_block2_cta; ?> »</button>
 	<!-- <div class="ctaButton ">
 		<h5>
 			<a href="#">Get A Free Consultation</a>
@@ -48,20 +57,20 @@ namespace WP_Rig\WP_Rig;
 </div>
 <div id="topImg">
   <amp-img 
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/about-us-hands-team.png"
+  src="<?php echo $about_us_block2_image_mobile['url']; ?>"
   width="1536"
 			height="768"
 			layout="responsive"
-      alt="about-us-hands-team"
+      alt="<?php echo $about_us_block2_image_mobile['alt']; ?>"
       media="(max-width: 63.99em)"
       >
     </amp-img>
     <amp-img 
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/about-us-hands-team-square.png"
+  src="<?php echo $about_us_block2_image['url']; ?>"
   width="6"
 			height="6"
 			layout="responsive"
-      alt="about-us-hands-team-square"
+      alt="<?php echo $about_us_block2_image['alt']; ?>"
       media="(min-width: 64em)"
       >
 		</amp-img>
