@@ -1,0 +1,292 @@
+@media (--ipad-landscape-menu-query) {
+    #block2 {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+		background: #fff;
+		margin: 0 0 2rem;
+		color: #f7f7f7;
+		top: 0;
+		position: relative;
+		padding: 0;
+
+		& #carousel2 {
+			height: 30rem;
+		}
+
+		& amp-carousel {
+			height: 50rem;
+		}
+
+		& .amp-carousel-slide {
+			height: 50rem;
+		}
+
+		& #carousel2 amp-img {
+			height: 15rem;
+		}
+
+		& figcaption {
+			top: 0;
+			position: relative;
+			background: #2d2f91d9;
+			height: fit-content;
+			z-index: 3;
+			text-align: center;
+			color: #f7f7f7;
+			margin-top: 0;
+			padding: 1rem;
+			min-height: 18rem;
+
+			& h5 {
+				font-variant-caps: all-small-caps;
+				font-size: 1rem;
+				margin-block-start: 0.3em;
+ 				margin-block-end: 0.3em;
+
+			}
+
+			& h4 {
+				font-family: var(--global-font-family);
+				font-size: 1.4rem;
+				margin-block-start: 0.3em;
+ 				margin-block-end: 0.3em;
+			}
+
+			& p {
+				width: 80%;
+				margin-left: 10%;
+				font-size: .9rem;
+			}
+		}
+	}
+}
+
+@media (--iphone-x-landscape-menu-query) {
+    #block2 {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+		background: #fff;
+		margin: -2rem 3rem 2rem;
+		color: #f7f7f7;
+		top: 0;
+		position: relative;
+		padding: 0;
+
+		& #carousel2 {
+			height: 30rem;
+		}
+
+		& amp-carousel {
+			height: 50rem;
+		}
+
+		& .amp-carousel-slide {
+			height: 50rem;
+		}
+
+		& #carousel2 amp-img {
+			height: 15rem;
+		}
+
+		& figcaption {
+			top: 0;
+			position: relative;
+			background: #2d2f91d9;
+			height: fit-content;
+			z-index: 3;
+			text-align: center;
+			color: #f7f7f7;
+			margin-top: 0;
+			padding: 1rem;
+			min-height: 18rem;
+
+			& h5 {
+				font-variant-caps: all-small-caps;
+				font-size: 1rem;
+				margin-block-start: 0.3em;
+ 				margin-block-end: 0.3em;
+
+			}
+
+			& h4 {
+				font-family: var(--global-font-family);
+				font-size: 1.4rem;
+				margin-block-start: 0.3em;
+ 				margin-block-end: 0.3em;
+			}
+
+			& p {
+				width: 80%;
+				margin-left: 10%;
+				font-size: .9rem;
+			}
+		}
+	}
+}
+
+@media (--ipad-portrait-menu-query) {
+}
+@media (--mobile-menu-query) {
+}
+@media (--mobile-landscape-menu-query) {
+    #block2 {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+		background: #fff;
+		margin: -12rem 0 2rem;
+
+		& figcaption {
+
+			min-height: 22rem;
+
+			& h5 {
+			font-size: 1.2rem;
+			}
+
+			& p {
+				width: 60%;
+				margin-left: 20%;
+				font-size: 0.9rem;
+			}
+		}
+
+		& .ctaButton {
+			width: 40%;
+			margin-left: 30%;
+			margin-top: 2rem;
+			padding: 0.7rem 0;
+		}
+	}
+}
+
+@media (--narrow-portrait-menu-query) { 
+    #block2 {
+		grid-template-columns: 1fr;
+		grid-gap: 0;
+		background: #fff;
+		margin: -2rem 0 2rem;
+		color: #f7f7f7;
+		top: 0;
+		position: relative;
+		padding: 0;
+
+		& figcaption p {
+			width: 80%;
+			margin-left: auto;
+			font-size: .9rem;
+			margin-right: auto;
+		}
+	}
+}
+@media (--mobile-nav-off-menu-query) {
+}
+
+@media (--ipad-landscape-plus-menu-query) {
+    #block2 {
+        grid-template-columns: 1fr;
+		grid-gap: 0;
+		background: #fff;
+		margin: 0 0 2rem;
+		color: #f7f7f7;
+		top: 0;
+		position: relative;
+        padding: 0;
+        
+        & #carousel2 {
+            height: 30rem;
+            
+            & amp-img {
+                height: 45vw;
+                margin-right: 4.4vw;
+                margin-left: -13vw;
+                width: 70vw;
+            }
+        }
+        & amp-carousel,
+        & .amp-carousel-slide {
+			height: 50rem;
+        }
+        
+		& .amp-carousel-slide,
+		& amp-carousel {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "box1 box2";
+		}
+
+		& .box1 {
+			grid-area: box1;
+			margin-left: 8vw;
+			width: 30vw;
+			height: 52vh;
+			margin-top: 4rem;
+			z-index: 2;
+			right: -3rem;
+			background: #212559;
+		}
+
+		& .box2 {
+			grid-area: box2;
+		}
+
+		/* & #carousel2 amp-img {
+			height: 45vw;
+			margin-right: 4.4vw;
+			margin-left: -13vw;
+			width: 70vw;
+		} */
+        
+        & figcaption {
+			top: 0;
+			position: relative;
+			background: #2d2f91d9;
+			height: fit-content;
+			z-index: 3;
+			text-align: center;
+			color: #f7f7f7;
+			margin-top: 0;
+			padding: 1rem;
+			min-height: 18rem;
+
+			& h5 {
+				font-variant-caps: all-small-caps;
+                font-size: 1.2rem;
+				margin-block-start: 0.3em;
+ 				margin-block-end: 0.3em;
+
+			}
+
+			& h4 {
+				font-family: var(--global-font-family);
+				font-size: 2.4rem;
+				margin-block-start: 0.3em;
+ 				margin-block-end: 0.3em;
+			}
+
+			& p {
+				width: 80%;
+				margin-left: 10%;
+				font-size: 1rem;
+			}
+		}
+		/* & figcaption {
+
+		& h5 {
+			font-size: 1.2rem;
+		}
+
+		& h4 {
+			font-size: 2.4rem;
+		}
+
+		& p {
+			font-size: 1rem;
+		}
+	} */
+	
+	& .ctaButton {
+		padding: 1rem 0;
+		margin-top: 2rem;
+	}
+}
+}

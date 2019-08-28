@@ -1,0 +1,316 @@
+@media (--ipad-landscape-menu-query) {
+    #block4 {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		background: #212559;
+		padding: 1.7rem;
+		color: #f7f7f7;
+
+		& #phoneIcon,
+		& #mapIcon,
+		& #envelopeIcon {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			/* margin: 0 1em; */
+			/* display: grid;
+			grid-template-columns: 1fr 4fr;
+			grid-gap: 0.5rem; */
+			justify-content: center;
+
+			& a {
+				text-decoration: none;
+				color: #f7f7f7;
+			}
+		}
+	}
+}
+@media (--iphone-x-landscape-menu-query) {
+    #block4 {
+		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		top: -2rem;
+		position: relative;
+		grid-template-areas:
+		"findus phone"
+		"subscribe subscribe";
+
+		& #findUs,
+		& #phone,
+		& #envelopeIcon {
+			min-width: 25vw;
+
+			& .secondLine {
+				text-align: center;
+				width: 98vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 0;
+			}
+		}
+
+		& #findUs:nth-child(2),
+		& #phone:nth-child(2) {
+			width: 100vw;
+		}
+
+		& #findUs {
+			border-right: solid .5px;
+			margin-right: 2rem;
+			grid-area: findus;
+
+			& .secondLine {
+				/* padding-right: 2.5rem; */
+			}
+		}
+
+		& #phone {
+			grid-area: phone;
+		}
+
+		& #subscribe {
+			grid-area: subscribe;
+		}
+
+		& #phoneIcon,
+		& #mapIcon,
+		& #envelopeIcon {
+
+			& amp-img {
+				max-width: 1rem;
+			}
+
+			& h4 {
+				margin-top: 0;
+				margin-left: 1rem;
+			}
+		}
+
+		& #mapIcon amp-img,
+		& #envelopeIcon amp-img {
+			max-width: 1.5rem;
+			max-height: 1.5rem;
+		}
+
+		& h5 {
+			margin-top: 0;
+			margin-bottom: 0.3rem;
+			font-size: 0.9rem;
+
+			& a {
+				color: #f7f7f7;
+				text-decoration: none;
+			}
+		}
+	}
+}
+@media (--ipad-portrait-menu-query) {
+    #block4 {
+		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		position: relative;
+		grid-template-areas:
+		"findus phone"
+		"subscribe subscribe";
+		top: 0;
+		margin-bottom: 4rem;
+
+		& #findUs,
+		& #phone {
+			min-width: 25vw;
+
+			& .secondLine {
+				text-align: center;
+			}
+		}
+
+		& #findUs:nth-child(2),
+		& #phone:nth-child(2) {
+			width: 100vw;
+		}
+
+		& #findUs {
+			border-right: solid .5px;
+			margin-right: 2rem;
+			grid-area: findus;
+
+			& .secondLine {
+				/* padding-right: 2.5rem; */
+			}
+		}
+
+		& #phone {
+			grid-area: phone;
+		}
+
+		& #subscribe {
+			grid-area: subscribe;
+		}
+
+		& #phoneIcon,
+		& #mapIcon,
+		& #envelopeIcon {
+
+			& amp-img {
+				max-width: 1rem;
+			}
+
+			& h4 {
+				margin-top: 0;
+				margin-left: 1rem;
+			}
+		}
+
+		& #mapIcon amp-img,
+		& #envelopeIcon amp-img {
+			max-width: 1.5rem;
+			max-height: 1.5rem;
+		}
+
+		& h5 {
+			margin-top: 0;
+			margin-bottom: 0.3rem;
+			font-size: 0.9rem;
+
+			& a {
+				color: #f7f7f7;
+				text-decoration: none;
+			}
+		}
+	}
+}
+@media (--mobile-menu-query) {
+    #block4 {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		background: #212559;
+		padding: 1.7rem;
+		color: #f7f7f7;
+
+		& #phoneIcon,
+		& #mapIcon,
+		& #envelopeIcon {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			/* margin: 0 1em; */
+			/* display: grid;
+			grid-template-columns: 1fr 4fr;
+			grid-gap: 0.5rem; */
+			justify-content: center;
+
+			& a {
+				text-decoration: none;
+				color: #f7f7f7;
+			}
+		}
+	}
+}
+@media (--mobile-landscape-menu-query) {
+    #block4 {
+		/* display: grid; */
+
+		& #subscribe #ctaIframe {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		& amp-iframe {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		& #findUs {
+			border-right: none;
+			margin-right: 0;
+		}
+			& .secondLine {
+				/* padding-right: 2.5rem; */
+			}
+		
+		}
+}
+@media (--narrow-portrait-menu-query) { 
+    #block4 {
+		display: flex;
+		padding: 3.7rem 0.3rem 2.7rem;
+
+		& #subscribe #ctaIframe {
+			grid-column: 2;
+			margin-top: -2rem;
+			width: 100%;
+			/* margin-left: 0; */
+
+			& amp-iframe {
+				margin-left: auto;
+				margin-right: auto;
+
+			}
+		}
+
+	}
+}
+@media (--mobile-nav-off-menu-query) {
+}
+@media (--ipad-landscape-plus-menu-query) {
+
+    #block4 {
+		display: flex;
+        display: grid;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background: #212559;
+        padding: 1.7rem;
+		color: #f7f7f7;
+		grid-template-columns: 1fr 1fr 1fr;
+		top: 5rem;
+		position: relative;
+		grid-template-areas: "findus phone subscribe";
+		margin-bottom: 2rem;
+
+		& #mapIcon,
+		& #phoneIcon,
+		& #envelopeIcon {
+            display: flex;
+            flex-wrap: wrap;
+			justify-content: center;
+
+			& h4 {
+				margin-top: 0;
+				margin-left: 1rem;
+            }
+            
+            & a {
+				text-decoration: none;
+				color: #f7f7f7;
+			}
+		}
+
+		& .secondLine {
+			text-align: center;
+			/* padding: 0 1.5rem; */
+		}
+
+		& #mapIcon amp-img,
+		& #envelopeIcon amp-img {
+			max-height: 1.5rem;
+		}
+
+		& #mapIcon amp-img,
+		& #phoneIcon amp-img,
+		& #envelopeIcon amp-img {
+			max-width: 1.5rem;
+		}
+		
+		& #findUs,
+		& #phone {
+			border-right: .5px solid;
+			margin-right: 2rem;
+		}
+	}
+
+}
