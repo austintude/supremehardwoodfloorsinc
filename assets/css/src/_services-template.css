@@ -1,0 +1,19 @@
+.page-template-services {
+    & #block1 {
+        & p {
+            font-size: 0.9rem;
+        }
+        
+        @media (--ipad-landscape-plus-menu-query) {
+            & #contentBlock {
+                min-height: 26rem;
+            }
+        }
+    }
+    @media (--narrow-portrait-menu-query) {
+        & #block1.evenBlock #contentBlock,
+        & #block1.oddBlock #contentBlock {
+            min-height: 24rem;
+        }
+    }
+}
