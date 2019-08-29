@@ -237,6 +237,9 @@ select {
 	top: 10rem;
 	position: absolute;
 	text-shadow: 2px 2px #000;
+	& a:visited {
+		color: #f7f7f7;
+	}
 }
 
 .site-title a {
@@ -641,6 +644,11 @@ were hidden (via .neverending) before. */
 		font-style: italic;
 		}
 	}
+	& .site-info {
+		& a:visited {
+			color: #333;
+		}
+	}
 }
 
 
@@ -686,6 +694,9 @@ were hidden (via .neverending) before. */
 
 		& .site-title {
 			margin-top: 22vh;
+			& a:visited {
+				color: #fff;
+			}
 		}
 		& .preBlock {
 			display: flex;
@@ -836,6 +847,10 @@ were hidden (via .neverending) before. */
 		color: #202158;
 		margin: -10rem 0 0;
 
+		& a:visited {
+			color: #333;
+		}
+
 		& #supremeSocial {
 			grid-gap: 0.1rem;
 			width: 50%;
@@ -890,6 +905,10 @@ were hidden (via .neverending) before. */
 
 		& .site-footer {
 			margin-top: -5rem;
+			& a,
+			& a:visited {
+				color: #333;
+			}
 		}
 	}
 }
@@ -1439,7 +1458,7 @@ were hidden (via .neverending) before. */
 		& #supremeLogo {
 			margin-top: 1rem;
 			margin-bottom: 2rem;
-			top: 2rem;
+			top: 0;
 			position: relative;
 			/* width: 50vw; */
 		}

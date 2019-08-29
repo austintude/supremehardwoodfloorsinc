@@ -190,7 +190,8 @@
 		color: #f7f7f7;
 		top: 0;
 		position: relative;
-        padding: 0;
+		padding: 0;
+		min-height: 70vh;
         
         & #carousel2 {
             height: 30rem;
@@ -228,13 +229,6 @@
 		& .box2 {
 			grid-area: box2;
 		}
-
-		/* & #carousel2 amp-img {
-			height: 45vw;
-			margin-right: 4.4vw;
-			margin-left: -13vw;
-			width: 70vw;
-		} */
         
         & figcaption {
 			top: 0;
@@ -269,24 +263,34 @@
 				font-size: 1rem;
 			}
 		}
-		/* & figcaption {
-
-		& h5 {
-			font-size: 1.2rem;
-		}
-
-		& h4 {
-			font-size: 2.4rem;
-		}
-
-		& p {
-			font-size: 1rem;
-		}
-	} */
-	
 	& .ctaButton {
 		padding: 1rem 0;
 		margin-top: 2rem;
 	}
 }
+}
+
+@media (--large-desktop-query) {
+	#block2 {
+		min-height: 80vh;
+		& #carousel2 {
+			height: 80vh;
+		}
+		& .amp-carousel-slide, 
+		& amp-carousel {
+			height: 80vh;
+	}
+	& h4,
+& h5,
+& p {
+	transform: scale(2,2);
+}
+& p {
+	max-width: 20rem;
+    margin-left: auto;
+	margin-right: auto;
+	left: 0;
+}
+}
+
 }

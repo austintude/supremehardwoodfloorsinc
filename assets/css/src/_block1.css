@@ -42,6 +42,7 @@
 			font-weight: 300;
 			text-align: center;
 			font-size: 1.2rem;
+			text-transform: uppercase;
 		}
 
 		& p {
@@ -150,12 +151,13 @@
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 0;
 		background: #212559;
-		margin: 7rem 0 4rem;
+		margin: 7rem 0 0;
 		color: #f7f7f7;
 		top: 0;
 		position: relative;
 		padding: 1.3rem 0;
 		display: grid;
+		min-height: 80vh;
 
 		& h3 {
 			padding-top: 0.5rem;
