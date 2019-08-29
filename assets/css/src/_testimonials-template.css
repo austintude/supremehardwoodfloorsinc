@@ -1,11 +1,28 @@
 .page-template-testimonials {
 
+    & #testimonialsBlock {
+        margin-top: 5rem;
+        & ol {
+            padding-inline-end: 2rem;
+            padding-inline-start: 2rem
+        }
+    }
+
+    @media (--mobile-menu-query) {
+        & ol {
+        padding-inline-start: 0;
+        padding: 0 2rem;
+        }
+    }
+
     & .fbtest {
         margin-left: auto;
         margin-right: auto;
     }
 
     & #testimonialGrid {
+        display: flex;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1rem;
         margin: 8rem 0 4rem;
@@ -13,16 +30,23 @@
         top: 0;
         position: relative;
         padding: 1.3rem 1.3rem;
-        display: grid;
         width: 100vw;
         text-align: center;
+
+        @media (--mobile-menu-query) {
+            grid-template-columns: 1fr;
+        }
     }
 
-    & .testimonialsList {
+     & .testimonialsList {
         column-count: 2;
         column-fill: balance;
         column-gap: 2rem;
         margin: 1rem 0;
+
+        @media (--mobile-menu-query) {
+            column-count: 1;
+        }
     }
 
     & .testimonialsList>* {

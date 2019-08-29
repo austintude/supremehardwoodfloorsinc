@@ -41,13 +41,7 @@ namespace WP_Rig\WP_Rig;
 		</div>
 </div>
 <div id="supremeLogo">
-	<amp-img 
-			src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/logorgb-min.png"
-			width="3"
-			height="1"
-			layout="responsive"
-			alt="showroom icon">
-		</amp-img>
+<?php the_custom_logo(); ?>
 </div>
 	<a href="<?php echo esc_url( __( 'https://austintatiousdesign.co/', 'wp-rig' ) ); ?>">
 		<?php
