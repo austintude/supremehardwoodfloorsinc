@@ -58,7 +58,7 @@ $hero_image_ipad_landscape_plus = get_sub_field('hero_image_ipad_landscape_plus'
 		
 	</div>
 	<?php endwhile; ?>
-	</amp-carousel>
+</amp-carousel>
 </div> <!-- end #carouselHero -->
 	
 
