@@ -23,8 +23,6 @@ wp_rig()->print_styles( 'wp-rig-content' );
 		<?php 
 			get_template_part( 'template-parts/content/facebookTestimonial' );
 			get_template_part( 'template-parts/content/testimonialQuotes' );
-			get_template_part( 'template-parts/content/servicesBlock2' );
-			get_template_part( 'template-parts/content/servicesBlock3' );
 		?>
 		
 	</main><!-- #primary -->
