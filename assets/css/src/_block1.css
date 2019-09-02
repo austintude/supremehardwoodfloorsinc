@@ -219,3 +219,17 @@
 
 }
 
+@media (--large-desktop-query) {
+	#block1 {
+		& h3 {
+		font-size: 3rem;
+	}
+		& p {
+			font-size: 1.6rem;
+		}
+		& button {
+			line-height: 3rem;
+			font-size: 2rem;
+		}
+}
+}

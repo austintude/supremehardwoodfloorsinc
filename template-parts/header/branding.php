@@ -69,7 +69,7 @@ $hero_image_ipad_landscape_plus = get_sub_field('hero_image_ipad_landscape_plus'
 		<?php
 	} else {
 		?>
-		<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+		<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 		<?php
 	}
 	?>

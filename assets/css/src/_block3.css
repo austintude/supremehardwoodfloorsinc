@@ -282,5 +282,27 @@
 @media (--large-desktop-query) {
 	#block3 {
 		min-height: 80vh;
+		& h3 {
+			top: 2.5rem;
+		}
+		& p {
+			font-size: 1.6rem;
+		}
+		& .ctaButton {
+			line-height: 2rem;
+
+			& h5 {
+				font-size: 2rem;
+			}
+		}
+		& amp-img.icon {
+			height: 5rem;
+			width: 5rem;
+			max-width: 200px;
+			max-height: 200px;
+		}
+		& .blockSection .titleBlock .titleSection amp-img.angle {
+			right: -4.3rem;
+		}
 	}
 }

@@ -314,3 +314,23 @@
 	}
 
 }
+
+@media (--large-desktop-query) {
+#block4 {
+	& #envelopeIcon amp-img,
+	& #mapIcon amp-img,
+	& #phoneIcon amp-img {
+    max-width: 2.5rem;
+}
+	& #envelopeIcon amp-img,
+	& #mapIcon amp-img {
+		max-height: 2.5rem;
+	}
+	& h4 {
+		font-size: 1.7rem;
+	}
+	& h5 {
+		font-size: 1.3rem;
+	}
+}
+}

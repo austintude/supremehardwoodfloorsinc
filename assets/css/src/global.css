@@ -1491,3 +1491,39 @@ were hidden (via .neverending) before. */
 
 }
 
+@media (--large-desktop-query) {
+
+	.site-branding {
+		& .site-title {
+		font-size: 5rem;
+		}
+	}
+	.site-description {
+		top: -45vh;
+		font-size: 2rem;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+	}
+
+	.main-navigation {
+
+		& .menu {
+			top: 1rem;
+		}
+		& ul li a {
+		font-size: 2rem;
+		}
+	}
+
+	.site-footer {
+		& #supremeSocial #socialIcon1,
+		& #supremeSocial #socialIcon2,
+		& #supremeSocial #socialIcon3,
+		& #supremeSocial>div {
+		width: 3rem;
+		height: 3rem;
+	}
+}
+}

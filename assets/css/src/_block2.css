@@ -280,16 +280,18 @@
 		& amp-carousel {
 			height: 80vh;
 	}
-	& h4,
-& h5,
-& p {
-	transform: scale(2,2);
-}
-& p {
-	max-width: 20rem;
+	& figcaption h5 {
+		font-size: 2.2rem;
+	}
+	& figcaption h4 {
+		font-size: 3rem;
+	}
+& figcaption p {
+	/* max-width: 20rem; */
     margin-left: auto;
 	margin-right: auto;
 	left: 0;
+	font-size: 1.6rem;
 }
 }
 

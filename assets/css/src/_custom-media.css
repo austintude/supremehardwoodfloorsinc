@@ -20,4 +20,4 @@
 @custom-media --content-query screen and (min-width: 48em);
 @custom-media --sidebar-query screen and (min-width: 52.1em);
 @custom-media --ipad-landscape-plus-menu-query screen and (min-width: 64em);
-@custom-media --large-desktop-query screen and (min-width: 134em);
+@custom-media --large-desktop-query screen and (min-width: 120em);
