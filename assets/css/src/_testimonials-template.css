@@ -1,5 +1,6 @@
 .page-template-testimonials {
-
+    left: 0;
+    
     & #testimonialsBlock {
         margin-top: 5rem;
         & ol {
@@ -105,7 +106,7 @@
         .testimonialsCard .testimonialsContent:before {
             color: rgba(0,0,0,0.5);
             /* font-size: 3em; */
-            left: 0.25em;
+            left: 0;
             top: 0.25em;
         }
     & #testimonials .testimonialsList .blockquote.emphasized {

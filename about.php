@@ -24,8 +24,8 @@ wp_rig()->print_styles( 'wp-rig-content' );
 			get_template_part( 'template-parts/content/aboutBlock1' );
 			get_template_part( 'template-parts/content/aboutBlock2' );
 			get_template_part( 'template-parts/content/aboutBlock3' );
-			get_template_part( 'template-parts/content/aboutBlock4' );
-			get_template_part( 'template-parts/content/aboutBlock5' );
+			// get_template_part( 'template-parts/content/aboutBlock4' );
+			// get_template_part( 'template-parts/content/aboutBlock5' );
 		?>
 		
 	</main><!-- #primary -->

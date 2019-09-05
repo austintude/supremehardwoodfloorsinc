@@ -64,7 +64,7 @@ namespace WP_Rig\WP_Rig;
 			alt="a sample image">
 		</amp-img>	 -->
 		<p>
-		This is a fantastic little painting. When things happen - enjoy them. They're little gifts. Get tough with it, get strong. 
+		Choose from our large selection of luxurious prefinished hardwood floors from the finest manufacturers.
 		</p>
 		<div class="ctaButton">
 			<h5>
@@ -128,7 +128,7 @@ namespace WP_Rig\WP_Rig;
 			alt="a sample image">
 		</amp-img>	 -->
 		<p>
-		This is a fantastic little painting. When things happen - enjoy them. They're little gifts. Get tough with it, get strong. 
+		Whether your taste is traditional, modern, rustic or custom, we have an in-house designer to help you achieve your vision.
 		</p>
 		<div class="ctaButton">
 			<h5>
@@ -190,7 +190,9 @@ namespace WP_Rig\WP_Rig;
 			alt="a sample image">
 		</amp-img> -->
 		<p>
-		This is a fantastic little painting. When things happen - enjoy them. They're little gifts. Get tough with it, get strong. 
+		Open Monday through Friday, 10am-5pm
+		<br>
+Our showroom is a great place for you to start. We are happy to meet with you during regular store hours or at a scheduled time that is convenient for you.
 		</p>
 		<div class="ctaButton">
 			<h5>

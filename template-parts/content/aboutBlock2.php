@@ -22,9 +22,9 @@ $about_us_cta_loading_image			= get_field('about_us_cta_loading_image');
   <?php echo $about_us_block2_title; ?>
   </h2>
   <div class="contentBlock">
-    <p>
+  <span class="blockContent">
     <?php echo $about_us_block2_pre_image_content; ?>
-    </p>
+</span>
 </div>
 </div>
 <div id="block1" class="evenBlock">
@@ -33,9 +33,9 @@ $about_us_cta_loading_image			= get_field('about_us_cta_loading_image');
 	<h3>
   <?php echo $about_us_block2_sub_title; ?>
 	</h3>
-	<p>
+	<span class="blockContent">
 	<?php echo $about_us_block2_content; ?>
-	</p>
+</span>
 	<amp-lightbox id="my-lightbox" layout="nodisplay">
     <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0">
       
