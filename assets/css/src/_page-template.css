@@ -186,7 +186,7 @@
 
 			& #contentBlock {
 				grid-area: block-1st;
-				min-height: 28rem;
+				min-height: 26rem;
 
 				& .blockContent {
 					& p,
@@ -208,11 +208,11 @@
 			& #contentBlock {
 				background: #212559;
     left: 8vw;
-    height: 58vh;
+    height: 35vh;
     width: 30vw;
     z-index: 3;
     position: relative;
-	margin: 1rem auto auto auto;
+	margin: 2rem auto auto auto;
 	
 	& .blockContent {
 		& p,
@@ -229,21 +229,6 @@
 
 			& #topImg {
 				grid-area: block-2nd;
-			}
-
-			& #contentBlock {
-				grid-area: block-1st;
-				min-height: 52rem;
-
-				& .blockContent {
-					& p,
-					& ul li {
-						font-size: 0.9rem;
-					}
-				}
-			}
-
-			& #topImg {
 				background: transparent;
     height: 40vw;
     width: 65vw;
@@ -256,11 +241,12 @@
 				background: #212559;
 	left: auto;
 	right: 8vw;
-    height: 58vh;
+    height: 35vh;
     width: 30vw;
     z-index: 3;
     position: relative;
-	margin: 2.5rem auto auto auto;
+	margin: 2rem auto auto auto;
+	min-height: 26rem;
 	
 	& .blockContent {
 		& p,
@@ -289,17 +275,25 @@
 				}
 			}
 		}
-	}
-	
-	@media (--large-desktop-queryquery) {
-		& #block1.evenBlock {
-
-			& #contentBlock {
-				grid-area: block-1st;
-				margin-top: -1.5rem;
-				min-height: 60rem;
-			}
-        }
-	}
-
+	}	
 }
+	@media (--large-desktop-query) {
+		.page-template {
+			& #block1.oddBlock,
+			& #block3,
+			& #block5 {
+				& #contentBlock {
+					min-height: 30rem;
+					margin: 12rem auto auto auto;
+				}
+			}
+			& #block1.evenBlock {
+				& #contentBlock {
+		height: 35vh;
+		min-height: 35rem;
+		margin: 12rem auto auto auto;
+				}		
+		}
+	}
+}
+

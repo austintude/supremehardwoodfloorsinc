@@ -1,0 +1,43 @@
+
+@media (--ipad-landscape-plus-menu-query) {
+    .page-template-about {
+
+    & #block1.oddBlock,
+		& #block3,
+		& #block5 {
+
+			& #contentBlock {
+                min-height: 31rem;
+            }
+        }
+
+    & #block1.evenBlock {
+    grid-template-areas: "block-2nd block-1st";
+    left: 0;
+    width: 100vw;
+
+    & #topImg {
+        grid-area: block-2nd;
+    }
+
+    & #contentBlock {
+        grid-area: block-1st;
+        min-height: 50rem;
+    }
+}
+}
+}
+
+@media (--large-desktop-query) {
+    .page-template-about {
+        & #block1.evenBlock {
+
+        & #contentBlock {
+            grid-area: block-1st;
+            margin-top: -1.5rem;
+            min-height: 60rem;
+        }
+    }
+}
+
+}
