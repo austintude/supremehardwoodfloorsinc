@@ -630,3 +630,10 @@ were hidden (via .neverending) before. */
 .infinity-end.neverending .site-footer {
 	display: block;
 }
+
+@media (--narrow-portrait-menu-query) { 
+
+	.nav--toggle-small .menu-toggle {
+		margin: .8em auto;
+	}
+}

@@ -6,6 +6,7 @@
  */
 
 namespace WP_Rig\WP_Rig;
+$service_hero_description			= get_field('service_hero_description');
 
 ?>
 
@@ -58,4 +59,11 @@ namespace WP_Rig\WP_Rig;
 </div> <!-- end #carouselHero -->
 	
 		<p class="site-title"><?php the_title(); ?></p>
+
+		<?php if ($service_hero_description != null) { ?>
+		<p class="site-description">
+		<?php echo $service_hero_description; ?>
+		</p>
+
+		<?php }  ?>
 </div><!-- .site-branding -->

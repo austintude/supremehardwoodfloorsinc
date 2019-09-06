@@ -10,10 +10,15 @@
             }
         }
     }
-    @media (--narrow-portrait-menu-query) {
-        & #block1.evenBlock #contentBlock,
-        & #block1.oddBlock #contentBlock {
-            min-height: 24rem;
-        }
+}
+
+@media (--narrow-portrait-menu-query) {
+    .page-template-services {
+    & #block1.evenBlock,
+    & #block1.oddBlock {
+        & #contentBlock {
+        min-height: 26rem;
     }
+}
+}
 }

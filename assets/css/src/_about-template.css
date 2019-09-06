@@ -1,3 +1,13 @@
+@media (--narrow-portrait-menu-query) {
+    .page-template-about {
+    & #block1.evenBlock,
+    & #block1.oddBlock {
+        & #contentBlock {
+        min-height: 26rem;
+    }
+}
+}
+}
 
 @media (--ipad-landscape-plus-menu-query) {
     .page-template-about {
