@@ -49,7 +49,7 @@ namespace WP_Rig\WP_Rig;
   </amp-iframe>
     </div>
   </amp-lightbox>
-  <button id="estimate" class="btn btn-lg btn-danger" on="tap:my-lightbox" role="button" tabindex="0">Get your free estimate now! »</button>
+  <button id="estimate" class="btn btn-lg btn-danger" on="tap:my-lightbox" role="button" tabindex="0">Get your estimate now! »</button>
 	<!-- <div class="ctaButton ">
 		<h5>
 			<a href="#">Get A Free Consultation</a>
