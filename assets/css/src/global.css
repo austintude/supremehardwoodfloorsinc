@@ -233,7 +233,7 @@ select {
 
 .site-title {
 	font-size: 2rem;
-	font-weight: 700;
+	/* font-weight: 700; */
 	line-height: 1.2;
 	color: #f7f7f7;
 	top: 10rem;

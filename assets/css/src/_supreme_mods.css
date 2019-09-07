@@ -1,9 +1,18 @@
 /* Appended for Supreme Wood Floor */
 
-.has-sidebar	.site {
+.has-sidebar .site {
 	margin: 0;
 	display: grid;
 	grid-template-columns: 1fr;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.site-title {
+	font-weight: 300;
 }
 
 .ctaButton {
@@ -72,6 +81,10 @@ background: rgba(0,0,0,.65);
 
 #subscribe {
 	grid-area: subscribe;
+}
+
+.site-footer .site-info {
+	margin: 0;
 }
 
 	/* Template Page mods begin */
