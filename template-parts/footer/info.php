@@ -14,7 +14,7 @@ namespace WP_Rig\WP_Rig;
 	<div id="supremeSocial">
 		<div id="socialIcon1">
 			<amp-img 
-				src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/facebook-icon-blue.png"
+				src="<?php echo get_template_directory_uri() ?>/assets/images/facebook-icon-blue.png"
 				width="1"
 				height="1"
 				layout="responsive"
@@ -23,7 +23,7 @@ namespace WP_Rig\WP_Rig;
 		</div>
 		<div id="socialIcon2">
 			<amp-img 
-				src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/instagram-icon-blue.png"
+				src="<?php echo get_template_directory_uri() ?>/assets/images/instagram-icon-blue.png"
 				width="1"
 				height="1"
 				layout="responsive"
@@ -32,7 +32,7 @@ namespace WP_Rig\WP_Rig;
 		</div>
 		<div id="socialIcon3">
 			<amp-img 
-				src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/twitter-icon-blue.png"
+				src="<?php echo get_template_directory_uri() ?>/assets/images/twitter-icon-blue.png"
 				width="1"
 				height="1"
 				layout="responsive"

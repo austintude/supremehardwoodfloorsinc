@@ -6,13 +6,6 @@
  */
 
 namespace WP_Rig\WP_Rig;
-$block4_location_icon				= get_field('block4_location_icon');
-$block4_phone_icon				= get_field('block4_phone_icon');
-$block4_mail_icon				= get_field('block4_mail_icon');
-$block4_amp_iframe_placeholder				= get_field('block4_amp_iframe_placeholder');
-$block4_subscribe_form				= get_field('block4_subscribe_form');
-
-
 
 ?>
 
@@ -21,11 +14,11 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 			<div id="mapIcon">
 					<amp-img 
 						class="icon"
-						src="<?php echo $block4_location_icon['url']; ?>"
+						src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/map-icon.png"
 						width="120"
 						height="120"
 						layout="intrinsic"
-						alt="<?php echo $block4_location_icon['alt']; ?>">
+						alt="map icon">
 					</amp-img> 
 				
 					<h4>Find Us</h4>
@@ -44,11 +37,11 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 			<a href="tel:5122885545">
 				<amp-img 
 					class="icon"
-					src="<?php echo $block4_phone_icon['url']; ?>"
+					src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/mobile-phone.png"
 					width="68"
 					height="124"
 					layout="intrinsic"
-					alt="<?php echo $block4_phone_icon['alt']; ?>">
+					alt="phone icon">
 				</amp-img> 
 			</a>
 			<a href="tel:5122885545">	
@@ -62,11 +55,11 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 	<div id="subscribe">
 		<div id="envelopeIcon">
 				<amp-img 
-					src="<?php echo $block4_mail_icon['url']; ?>"
+					src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/envelope.png"
 					width="84"
 					height="84"
 					layout="intrinsic"
-					alt="<?php echo $block4_mail_icon['alt']; ?>">
+					alt="envelope icon">
 				</amp-img> 
 				<h4>Newsletter Subscription *</h4>
 		</div>
@@ -77,11 +70,11 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 				layout="fixed" 
 				sandbox="allow-scripts allow-same-origin allow-popups" 
 				frameborder="0" 
-				src="<?php echo $block4_subscribe_form; ?>"
+				src="https://page.co/owDxN"
 				media="(max-width: 43.5em) and (min-height:27em)"
 				>
 				<amp-img layout="fill"
-					src="<?php echo $block4_amp_iframe_placeholder['url']; ?>"
+					src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/envelope.png"
 					placeholder>
 				</amp-img>
 			</amp-iframe>
@@ -91,11 +84,11 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 				layout="fixed" 
 				sandbox="allow-scripts allow-same-origin allow-popups" 
 				frameborder="0" 
-				src="<?php echo $block4_subscribe_form; ?>"
+				src="https://page.co/owDxN"
 				media="(max-width: 43.5em) and (max-height:26em)"
 				>
 				<amp-img layout="fill"
-					src="<?php echo $block4_amp_iframe_placeholder['url']; ?>"
+					src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/envelope.png"
 					placeholder>
 				</amp-img>
 			</amp-iframe>
@@ -105,11 +98,11 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 				layout="fixed" 
 				sandbox="allow-scripts allow-same-origin allow-popups" 
 				frameborder="0" 
-				src="<?php echo $block4_subscribe_form; ?>"
+				src="https://page.co/owDxN"
 				media="(min-width: 43.6em) and (min-height:27em) and (max-width: 48.5em)"
 				>
 				<amp-img layout="fill"
-					src="<?php echo $block4_amp_iframe_placeholder['url']; ?>"
+					src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/envelope.png"
 					placeholder>
 				</amp-img>
 			</amp-iframe>
@@ -119,11 +112,11 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 				layout="fixed" 
 				sandbox="allow-scripts allow-same-origin allow-popups" 
 				frameborder="0" 
-				src="<?php echo $block4_subscribe_form; ?>"
+				src="https://page.co/owDxN"
 				media="(min-width: 48.6em)"
 				>
 				<amp-img layout="fill"
-					src="<?php echo $block4_amp_iframe_placeholder['url']; ?>"
+					src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/envelope.png"
 					placeholder>
 				</amp-img>
 			</amp-iframe>

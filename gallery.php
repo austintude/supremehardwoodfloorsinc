@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Testimonials Page Template
+ * Template Name: Gallery Page Template
  *
  * When active, by adding the heading above and providing a custom name
  * this template becomes available in a drop-down panel in the editor.
@@ -21,8 +21,7 @@ wp_rig()->print_styles( 'wp-rig-content' );
 ?>
 	<main id="primary" class="site-main">
 		<?php 
-			// get_template_part( 'template-parts/content/facebookTestimonial' );
-			get_template_part( 'template-parts/content/testimonialQuotes' );
+			get_template_part( 'template-parts/content/gallery1' );
 		?>
 		
 	</main><!-- #primary -->

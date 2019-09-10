@@ -1,5 +1,9 @@
 #block4 {
 	max-width: 100vw;
+
+	& #address {
+		width: 95%;
+	}
 }
 @media (--ipad-landscape-menu-query) {
     #block4 {

@@ -1,0 +1,19 @@
+.page-template-gallery {
+    & .galleryBlocks {
+        display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-gap: 1rem;
+        grid-template-rows: repeat(2, 300px);
+
+        & .galleryItem {
+            border: 3px solid #E2E2E2;
+            border-radius: 1rem;
+            
+        }
+    }
+    & #amp-lightbox-gallery {
+        font-size: 2rem;
+        margin-top: -3rem;
+    }
+}

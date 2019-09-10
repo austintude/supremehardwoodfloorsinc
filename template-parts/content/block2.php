@@ -6,6 +6,7 @@
  */
 
 namespace WP_Rig\WP_Rig;
+$block2_carousel_of_images	= get_field('block2_carousel_of_images');
 
 ?>
 
@@ -17,126 +18,54 @@ namespace WP_Rig\WP_Rig;
 		type="slides"
 		autoplay
 		delay="4000">
+	
+	<?php while (have_rows('block2_carousel_of_images')) : the_row();
+
+// vars
+$block2_image_mobile = get_sub_field('block2_image_mobile');
+$block2_image_ipad_landscape_plus = get_sub_field('block2_image_ipad_landscape_plus');
+$block2_sub_title = get_sub_field('block2_sub_title');
+$block2_title = get_sub_field('block2_title');
+$block2_content = get_sub_field('block2_content');
+$block2_cta_url = get_sub_field('block2_cta_url');
+$block2_cta_txt = get_sub_field('block2_cta_txt');
+
+?>
 	<div>
-		<!-- <amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/indoors-circle-window-min.jpg"
-  width="12"
-			height="6"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img> -->
+	
 		<amp-img 
 		media="(max-width: 48.5em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/architecture-large-window-story-min.jpg"
-  width="600"
-			height="301"
-			layout="responsive"
-			alt="architecture-large-window-story-min"
-			class="box2">
-		</amp-img>
-		<amp-img 
-		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/architecture-large-window.jpg"
-  width="600"
-			height="301"
-			layout="responsive"
-			alt="architecture-large-window"
-			class="box2">
-		</amp-img>
-		<figcaption class="paragraph box1">
-			<h5>Featured Floor</h5>
-			<h4>Chardonnay</h4>
-			<p>
-				Clouds are free. They just float around the sky all day and have fun. It looks so good, I might as well not stop. The only thing worse than yellow snow is green snow. Mountains are so simple, they're hard. You have to make almighty decisions when you're the creator.
-			</p>
-			<div class="ctaButton">
-				<h5>
-					<a href="#">View Now</a>
-				</h5>
-			</div>
-		</figcaption>
-	</div>
-    <div>
-	<!-- <amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/governors-mansion-min.jpg"
-  width="12"
-			height="6"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img> -->
-		<amp-img 
-		media="(max-width: 48.5em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/living-room.jpg"
+  src="<?php echo $block2_image_mobile['url']; ?>"
   width="1200"
 			height="600"
 			layout="responsive"
-			alt="living-room"
+			alt="<?php echo $block2_image_mobile['alt']; ?>"
 			class="box2">
 		</amp-img>
 		<amp-img 
 		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/living-room-story-min.jpg"
+  src="<?php echo $block2_image_ipad_landscape_plus['url']; ?>"
   width="1200"
 			height="600"
 			layout="responsive"
-			alt="living-room-story-min"
-			class="box2">
-		</amp-img>	
-		<figcaption class="paragraph box1">
-		<h5>Featured Floor</h5>
-			<h4>Capris</h4>
-			<p>
-			Just let your mind wander and enjoy. This should make you happy. But they're very easily killed. Clouds are delicate.
-			</p>
-			<div class="ctaButton">
-				<h5>
-					<a href="#">View Now</a>
-				</h5>
-			</div>
-		</figcaption>
-	</div>
-	<div>
-	<!-- <amp-img 
-		media="(max-width: 48.5em) and (max-height:23em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/kitchen-bright-story-min.jpg"
-  width="12"
-			height="6"
-			layout="responsive"
-			alt="a sample image">
-		</amp-img> -->
-		<amp-img 
-		media="(max-width: 48.5em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/space-open-room-darm-wood-story-min.jpg"
-  width="600"
-			height="300"
-			layout="responsive"
-			alt="space-open-room-darm-wood-story-min"
+			alt="<?php echo $block2_image_ipad_landscape_plus['alt']; ?>"
 			class="box2">
 		</amp-img>
-		<amp-img 
-		media="(min-width: 48.6em)"
-  src="../wp-content/themes/wprig-supremehardwoodfloorsinc/assets/images/space-open-room-darm-wood.jpg"
-  width="600"
-			height="300"
-			layout="responsive"
-			alt="space-open-room-darm-wood"
-			class="box2">
-		</amp-img>	
 		<figcaption class="paragraph box1">
-		<h5>Featured Floor</h5>
-			<h4>Classic Walnut</h4>
+			<h5><?php echo $block2_sub_title; ?></h5>
+			<h4><?php echo $block2_title; ?></h4>
 			<p>
-			You can do anything your heart can imagine. You're meant to have fun in life. Only eight colors that you need. Let's put some happy little clouds in our world.
+			<?php echo $block2_content; ?>
 			</p>
 			<div class="ctaButton">
 				<h5>
-					<a href="#">View Now</a>
+					<a href="<?php echo $block2_cta_url; ?>"><?php echo $block2_cta_txt; ?></a>
 				</h5>
 			</div>
 		</figcaption>
 	</div>
+
+	<?php endwhile; ?>
 	</amp-carousel>
 </div> <!-- end #carouselHero -->
 </div>
