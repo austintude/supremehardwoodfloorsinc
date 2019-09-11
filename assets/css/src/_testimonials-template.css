@@ -24,7 +24,6 @@
         }
         & .rightBlock {
             & ul {
-                margin-left: 0;
                 padding-inline-start: 0;
             }
         }
@@ -176,6 +175,9 @@
         & .rightBlock {
             & li:first-child {
                 font-weight: 600;
+            }
+            & ul {
+                margin-left: 0;
             }
             & li {
                 font-size: 1rem;
