@@ -55,6 +55,7 @@
 
      & .testimonialsList {
         margin: 1rem 0;
+        grid-gap: 1rem;
         display: flex;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
