@@ -44,7 +44,7 @@ $block3_cta_txt = get_sub_field('block3_cta_txt');
 			height="221"
 			layout="responsive"
 			alt="<?php echo $block3_angled_line['alt']; ?>"
-			media="(min-width: 48.6em)"
+			media="(min-width: 52.1em)"
 			>
 		</amp-img>
 		<h3>

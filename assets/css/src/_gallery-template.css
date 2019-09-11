@@ -4,16 +4,27 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         grid-gap: 1rem;
-        grid-template-rows: repeat(2, 300px);
+        grid-template-rows: repeat(2, 435px);
+        margin: 0 5vw;
 
         & .galleryItem {
-            border: 3px solid #E2E2E2;
-            border-radius: 1rem;
-            
+
+            & .categoryTitle {
+                background: #fff;
+                padding: 2rem 0;
+
+                & h3 {
+                    text-align: center;
+                }                
+            }
         }
     }
     & #amp-lightbox-gallery {
         font-size: 2rem;
         margin-top: -3rem;
+    }
+
+    & main {
+        padding-top: 4rem;
     }
 }

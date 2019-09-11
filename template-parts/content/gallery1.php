@@ -58,6 +58,11 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
 	
 	<?php endwhile; ?>
 </div><!-- close hidden div -->
+<div class="categoryTitle" id="category-<?php echo $gallery_category_id; ?>">
+       <h3> 
+           <?php echo $gallery_category_content; ?>
+</h3>
+</div>
 </div> <!-- end -->
 <?php endwhile; ?>
 </div>
