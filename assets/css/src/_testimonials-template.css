@@ -8,12 +8,27 @@
             padding-inline-start: 2rem
         }
     }
-
+   
     @media (--mobile-menu-query) {
-        & ol {
+        & #testimonialsBlock {
+            & ol {
         padding-inline-start: 0;
-        padding: 0 2rem;
+        padding-inline-end: 0;
+        padding: 0;
+
+        & .blockquote p {
+            position: relative;
+            line-height: 1.4;
+            font-size: 1rem;
         }
+        }
+        & .rightBlock {
+            & ul {
+                margin-left: 0;
+                padding-inline-start: 0;
+            }
+        }
+    }
     }
 
     & .fbtest {
@@ -142,7 +157,7 @@
     & .testimonialContentBlocks {
         display: flex;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         grid-gap: 1rem;
         margin-top: 3rem;
         
@@ -204,4 +219,12 @@
         left: 0.25em;
         top: 0.25em;
     }
+}
+
+@media (--ipad-landscape-menu-query) {
+    .page-template.page-template-testimonials {
+        & .site-footer {
+        margin-top: 3rem;
+    }
+}
 }
