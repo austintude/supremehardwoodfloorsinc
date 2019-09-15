@@ -32,7 +32,7 @@
 
     & #contentBlock {
         grid-area: block-1st;
-        min-height: 50rem;
+        min-height: 52rem;
     }
 }
 }
