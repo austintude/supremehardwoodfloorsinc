@@ -14,9 +14,11 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header('custom');
+get_header('blog');
 
 wp_rig()->print_styles( 'wp-rig-content' );
+
+$blog_images	= get_field('blog_images');
 
 ?>
 	<main id="primary" class="site-main">

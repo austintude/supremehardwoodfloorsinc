@@ -87,9 +87,13 @@
 	max-width: 100%;
 }
 
-/* @media (--sidebar-query) {
+.blog,
+.single,
+.archive,
+.search {
+@media (--sidebar-query) {
 
-	.has-sidebar .site {
+	& .has-sidebar .site {
 		margin: 0;
 		display: grid;
 		grid-template-columns: 3fr 1fr;
@@ -97,24 +101,26 @@
 		justify-content: center;
 	}
 
-	.site-header {
+	& .site-header {
 		grid-column: span 2;
 	}
 
-	.site-main {
+	& .site-main {
 		grid-column: 1;
 		min-width: 0;
 	}
 
-	.primary-sidebar {
+	& .primary-sidebar {
 		grid-column: 2;
 		min-width: 0;
+		padding-right: 3rem;
 	}
 
-	.site-footer {
+	& .site-footer {
 		grid-column: span 2;
 	}
-} */
+}
+}
 
 
 /*--------------------------------------------------------------
