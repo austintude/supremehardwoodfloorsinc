@@ -23,7 +23,7 @@ $cta_loading_image			= get_field('cta_loading_image');
 
 <section id="contactUsBlock">
     <div class="leftBlock" vocab="http://schema.org/" typeof="LocalBusiness">
-        <h3>Our Office</h3>
+        <h3>Showroom</h3>
 	<section id="physical">
 	
         <div id="address">		
@@ -48,11 +48,22 @@ $cta_loading_image			= get_field('cta_loading_image');
 				</li>
 				
 				<li>
-				Closed <?php echo $contact_us_closed; ?>
+				 <?php echo $contact_us_closed; ?>
 				</li>
 			</ul>
 			
-		</div>
+        </div>
+        <div id="googleMap">
+        <amp-iframe width="600" height="450" layout="responsive" 
+			  sandbox="allow-scripts allow-same-origin allow-popups" 
+			  frameborder="0" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3447.9253453531173!2d-97.97253728514455!3d30.210678117656027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865b46175527c0e7%3A0x535fb8c6947321da!2sSupreme%20Hardwood%20Floors!5e0!3m2!1sen!2sus!4v1568318062947!5m2!1sen!2sus">
+    <amp-img layout="fill"
+             src="<?php echo get_template_directory_uri() ?>/assets/images/Google-Map-Supreme.jpg"
+			 placeholder>
+			</amp-img>
+  </amp-iframe>
+</div>
 </div>
 <div class="rightBlock">
     <h4> Contact Us</h4>

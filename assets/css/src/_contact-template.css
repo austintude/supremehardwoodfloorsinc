@@ -17,7 +17,14 @@
             margin-left: auto;
             margin-right: auto;
         }
+
+        & .leftBlock {
+            & #googleMap {
+                padding-bottom: 2rem;
+            }
+        }
     }
+
     & .rightBlock {
         margin-left: -1rem;
     }
