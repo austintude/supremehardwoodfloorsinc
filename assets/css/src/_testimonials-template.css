@@ -224,6 +224,30 @@
     }
 }
 
+@media (--narrow-menu-query) {
+    .page-template-testimonials{
+        & .testimonialsCard {
+            width: 100vw;
+        }
+& #testimonialsBlock ol .blockquote p {
+    position: relative;
+    line-height: 1.4;
+    font-size: 1rem;
+    width: 90vw;
+    padding-right: 1rem;
+}
+& .testimonialContentBlocks .rightBlock li .rightItem {
+    text-align: left;
+}
+& .leftBlock {
+    width: 80vw;
+}
+& cite.testimonialsQuote {
+    width: 100vw;
+}
+}
+}
+
 @media (--ipad-landscape-menu-query) {
     .page-template.page-template-testimonials {
         & .site-footer {

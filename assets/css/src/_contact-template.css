@@ -44,4 +44,10 @@
             }
         }
     }
+    @media (--narrow-portrait-menu-query) {
+   & #contactUsBlock .rightBlock {
+        margin-left: 0rem;
+        padding-right: 7rem;
+    }
+}
 }

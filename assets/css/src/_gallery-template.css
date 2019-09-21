@@ -27,4 +27,13 @@
     & main {
         padding-top: 4rem;
     }
+    @media (--narrow-portrait-menu-query) {
+        & .galleryBlocks {
+            margin: 0;
+        }
+        & #carouselHero,
+        & #carouselHero amp-img {
+            top: -12rem;
+        }
+    }
 }

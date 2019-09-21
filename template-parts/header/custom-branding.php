@@ -34,7 +34,7 @@ $service_hero_description			= get_field('service_hero_description');
   src="<?php echo $featured_img_url; ?>"
   width="640"
 			height="480"
-			layout="responsive"
+			layout="flex-item"
 			alt="<?php the_title(); ?>">
 		</amp-img>
 		<amp-img 
@@ -42,7 +42,7 @@ $service_hero_description			= get_field('service_hero_description');
   src="<?php echo $featured_img_url; ?>"
   width="640"
 			height="480"
-			layout="responsive"
+			layout="flex-item"
 			alt="<?php the_title(); ?>">
 		</amp-img>
 		<amp-img 

@@ -25,6 +25,7 @@
 @import "_typography.css";
 @import "_elements.css";
 @import "_links.css";
+@import "_supreme_mods.css";
 @import "_block1.css";
 @import "_block2.css";
 @import "_block3.css";
@@ -35,7 +36,7 @@
 @import "_testimonials-template.css";
 @import "_gallery-template.css";
 @import "_contact-template.css";
-@import "_supreme_mods.css";
+@import "_blog-single.css";
 
 /*--------------------------------------------------------------
 # Accessibility
