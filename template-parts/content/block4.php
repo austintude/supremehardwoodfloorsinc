@@ -45,8 +45,8 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 				<amp-img 
 					class="icon"
 					src="<?php echo $block4_phone_icon['url']; ?>"
-					width="68"
-					height="124"
+					width="120"
+					height="120"
 					layout="intrinsic"
 					alt="<?php echo $block4_phone_icon['alt']; ?>">
 				</amp-img> 
@@ -63,8 +63,8 @@ $block4_subscribe_form				= get_field('block4_subscribe_form');
 		<div id="envelopeIcon">
 				<amp-img 
 					src="<?php echo $block4_mail_icon['url']; ?>"
-					width="84"
-					height="84"
+					width="120"
+					height="120"
 					layout="intrinsic"
 					alt="<?php echo $block4_mail_icon['alt']; ?>">
 				</amp-img> 
