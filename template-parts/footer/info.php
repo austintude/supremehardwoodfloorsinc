@@ -24,7 +24,7 @@ namespace WP_Rig\WP_Rig;
 </a>
 		</div>
 		<div id="socialIcon2">
-		<a href="#" target="_blank" rel="noopener noreferrer">
+		<a href="https://www.instagram.com/supremehardwoodfloors/" target="_blank" rel="noopener noreferrer">
 		<amp-img 
 				src="<?php echo get_template_directory_uri() ?>/assets/images/instagram-icon-blue.png"
 				width="1"
