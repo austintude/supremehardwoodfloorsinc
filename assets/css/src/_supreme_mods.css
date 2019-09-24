@@ -627,7 +627,7 @@ background: rgba(0,0,0,.65);
 	#carouselHero amp-img,
 	.amp-carousel-slide,
 	amp-carousel {
-		top: -1rem;
+		top: -4rem;
 	}
 	.page-template #carouselHero,
 	.page-template #carouselHero amp-img,
