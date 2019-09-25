@@ -83,8 +83,15 @@ background: rgba(0,0,0,.65);
 	grid-area: subscribe;
 }
 
-.site-footer .site-info {
+.site-footer {
+	& .site-info {
 	margin: 0;
+	& a {
+		color: #202158;
+		text-decoration: none;
+		font-size: 0.8rem;
+	}
+}
 }
 
 	/* Template Page mods begin */
