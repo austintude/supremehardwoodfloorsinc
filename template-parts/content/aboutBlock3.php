@@ -31,8 +31,8 @@ $about_us_cta_loading_image			= get_field('about_us_cta_loading_image');
   <div id="topImg">
   <amp-img 
   src="<?php echo $about_us_block3_image_mobile['url']; ?>"
-  width="1536"
-			height="768"
+  width="412"
+			height="320"
 			layout="responsive"
       alt="<?php echo $about_us_block3_image_mobile['alt']; ?>"
       media="(max-width: 63.99em)"
@@ -40,8 +40,8 @@ $about_us_cta_loading_image			= get_field('about_us_cta_loading_image');
     </amp-img>
     <amp-img 
   src="<?php echo $about_us_block3_image['url']; ?>"
-  width="6"
-			height="6"
+  width="832"
+			height="512"
 			layout="responsive"
       alt="<?php echo $about_us_block3_image['alt']; ?>"
       media="(min-width: 64em)"
