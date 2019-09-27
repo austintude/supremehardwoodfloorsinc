@@ -53,7 +53,7 @@ $gallery_image_caption_id = get_sub_field('gallery_image_caption_id');
         <div hidden id="<?php echo $gallery_image_caption_id; ?>">
         <?php echo $gallery_image_caption; ?>
 </div>
-</div>
+</div> 
 		
 	
 	<?php endwhile; ?>
