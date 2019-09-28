@@ -9,7 +9,7 @@
 
 namespace WP_Rig\WP_Rig;
 
-get_header();
+get_header('404');
 
 wp_rig()->print_styles( 'wp-rig-content' );
 
