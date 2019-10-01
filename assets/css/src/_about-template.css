@@ -6,6 +6,13 @@
         min-height: 26rem;
     }
 }
+& amp-lightbox .lightbox {
+    top: 45vh;
+    z-index: 10000;
+}
+& .site-footer {
+    z-index: 1;
+}
 }
 }
 

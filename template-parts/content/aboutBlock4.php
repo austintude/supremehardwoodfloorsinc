@@ -36,8 +36,8 @@ $about_us_cta_loading_image			= get_field('about_us_cta_loading_image');
 	<p>
 	<?php echo $about_us_block4_content; ?>
 	</p>
-	<amp-lightbox id="my-lightbox" layout="nodisplay">
-    <div class="lightbox" on="tap:my-lightbox.close" role="button" tabindex="0">
+	<amp-lightbox id="my-lightbox4" layout="nodisplay">
+    <div class="lightbox" on="tap:my-lightbox4.close" role="button" tabindex="0">
       
       <amp-iframe width="350" height="300" layout="fixed" 
               sandbox="allow-scripts allow-same-origin allow-popups" frameborder="0" 
@@ -48,7 +48,7 @@ $about_us_cta_loading_image			= get_field('about_us_cta_loading_image');
   </amp-iframe>
     </div>
   </amp-lightbox>
-  <button id="estimate" class="btn btn-lg btn-danger" on="tap:my-lightbox" role="button" tabindex="0"><?php echo $about_us_block4_cta; ?> »</button>
+  <button id="estimate" class="btn btn-lg btn-danger" on="tap:my-lightbox4" role="button" tabindex="0"><?php echo $about_us_block4_cta; ?> »</button>
 	<!-- <div class="ctaButton ">
 		<h5>
 			<a href="#">Get A Free Consultation</a>
