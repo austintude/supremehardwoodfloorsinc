@@ -19,7 +19,7 @@
         & .site-description {
             top: -7rem;
     width: 100vw;
-    font-size: .7rem;
+    /* font-size: .7rem; */
     padding: 1rem;
         }
     & #block1.evenBlock,
