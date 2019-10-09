@@ -66,7 +66,7 @@ $block3_cta_txt = get_sub_field('block3_cta_txt');
 		</p>
 		<div class="ctaButton">
 			<h5>
-				<a href="<?php echo $block3_cta_url; ?>"><?php echo $block3_cta_txt; ?></a>
+				<a href="<?php echo $block3_cta_url; ?>" title="<?php echo $block3_title; ?>"><?php echo $block3_cta_txt; ?></a>
 			</h5>
 	</div>
 </div>

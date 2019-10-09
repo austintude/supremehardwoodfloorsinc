@@ -13,7 +13,7 @@ namespace WP_Rig\WP_Rig;
 <div class="site-info">
 	<div id="supremeSocial">
 		<div id="socialIcon1">
-		<a href="https://www.facebook.com/supremehardwoodfloorsinc/" target="_blank" rel="noopener noreferrer">
+		<a href="https://www.facebook.com/supremehardwoodfloorsinc/" target="_blank" rel="noopener">
 		<amp-img 
 				src="<?php echo get_template_directory_uri() ?>/assets/images/facebook-icon-blue.png"
 				width="1"
@@ -24,7 +24,7 @@ namespace WP_Rig\WP_Rig;
 </a>
 		</div>
 		<div id="socialIcon2">
-		<a href="https://www.instagram.com/supremehardwoodfloors/" target="_blank" rel="noopener noreferrer">
+		<a href="https://www.instagram.com/supremehardwoodfloors/" target="_blank" rel="noopener">
 		<amp-img 
 				src="<?php echo get_template_directory_uri() ?>/assets/images/instagram-icon-blue.png"
 				width="1"
@@ -35,7 +35,7 @@ namespace WP_Rig\WP_Rig;
 </a>
 		</div>
 		<div id="socialIcon3">
-		<a href="https://twitter.com/SupremeHardwood" target="_blank" rel="noopener noreferrer">
+		<a href="https://twitter.com/SupremeHardwood" target="_blank" rel="noopener">
 			<amp-img 
 				src="<?php echo get_template_directory_uri() ?>/assets/images/twitter-icon-blue.png"
 				width="1"
