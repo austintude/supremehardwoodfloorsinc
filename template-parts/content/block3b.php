@@ -20,7 +20,7 @@ $block3b_linkedicon = get_sub_field('block3b_linkedicon');
 $block3b_linkedicon_link = get_sub_field('block3b_linkedicon_link');
 ?>
 		<div class="cellIcon">
-			<a href="<?php echo $block3b_linkedicon_link; ?>" target="_blank" rel="noopener">
+			<a href="<?php echo $block3b_linkedicon_link; ?>" target="_blank" title="<?php echo $block3b_linkedicon['alt']; ?>" rel="noopener">
 				<amp-img 
 					src="<?php echo $block3b_linkedicon['url']; ?>"
 					layout="intrinsic"
