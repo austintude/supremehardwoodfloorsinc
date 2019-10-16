@@ -17,7 +17,7 @@ $block2_carousel_of_images	= get_field('block2_carousel_of_images');
 		layout="responsive"
 		type="slides"
 		autoplay
-		delay="4000">
+		delay="5500">
 	
 	<?php while (have_rows('block2_carousel_of_images')) : the_row();
 
