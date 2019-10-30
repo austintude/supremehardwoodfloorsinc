@@ -30,7 +30,7 @@ namespace WP_Rig\WP_Rig;
 	?>
 
 	<?php wp_head(); ?>
-	<meta name="robots" content="nofollow, noindex">
+	<meta name="robots" content="follow, index">
 </head>
 
 <body <?php body_class(); ?>>

@@ -18,7 +18,7 @@ namespace WP_Rig\WP_Rig;
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-	<link rel="preconnect" href="https://cdn.ampproject.org">
+	<link rel="preconnect" crossorigin href="https://cdn.ampproject.org">
 	<!-- AMP Analytics --><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 
 
@@ -31,7 +31,7 @@ namespace WP_Rig\WP_Rig;
 	?>
 
 	<?php wp_head(); ?>
-	<meta name="robots" content="nofollow, noindex">
+	<meta name="robots" content="follow, index">
 </head>
 
 <body <?php body_class(); ?>>
